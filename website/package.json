@@ -1,17 +1,18 @@
 {
-  "name": "platzi-media-player",
+  "name": "Media-player",
   "version": "1.0.0",
-  "description": "Proyecto del Curso Profesional de JavaScript de la Escuela de JavaScript de Platzi.",
+  "description": "Vanila JS academic practice.",
   "license": "MIT",
-  "author": "Richard B. Kaufman López <richardbkaufman@gmail.com>",
+  "author": "Camilo Rivera",
   "keywords": [
-    "platzi"
+    "javascript"
   ],
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+    "start": "live-server"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.4",
     "typescript": "^3.5.3"
   },
   "browserslist": [
