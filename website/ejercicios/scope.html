@@ -10,40 +10,19 @@
     <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
 
     <script>
-      // Global Scope
-      // var message = 'Hello, Platzi!';
-      // var $ = function(message) {
-      //   console.log('Say: ' + message);
-      // };
+      //globalScope
+      var message = "hello camilo"
 
-      // Function Scope
-      // function printNumbers() {
-      //   var i;
-      //   for (i = 0; i < 10; i++) {
-      //     function eventuallyPrintNumber(n) {
-      //       setTimeout(function() {
-      //         console.log(n);
-      //       }, 100);
-      //     }
-
-      //     eventuallyPrintNumber(i);
-      //   }
-      // }
-
-      // printNumbers();
-
-      // Block Scope
-      function printNumbers2() {
-        for (let i = 0; i < 10; i++) {
-          setTimeout(function() {
-            console.log(i);
-          }, 100);
+      //functionScope and BlockScope
+      const printNumbers = () => {
+        for(let i = 0; i < 10; i++){
+            setTimeout(() => {
+              console.log(i)
+            }, 100);
         }
       }
+      printNumbers()
 
-      printNumbers2();
-
-      // Module Scope
     </script>
   </body>
 </html>
