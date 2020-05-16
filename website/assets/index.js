@@ -10,5 +10,8 @@ const player = new MediaPlayer({
 	el: video,
 	plugins: [new Autoplay(), new AutoPause()]
 });
+
 playButton.onclick = () => player.togglePlay();
 pauseButton.onclick = () => player.toggleMute();
+
+
